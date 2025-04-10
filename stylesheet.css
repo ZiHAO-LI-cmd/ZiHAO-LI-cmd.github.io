@@ -121,13 +121,15 @@ a {
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-weight: 600;
+  color: #368f6b; /* 墨绿色 */
 }
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
+  color: #333;
 }
 
 name {
@@ -180,7 +182,7 @@ name {
 }
 
 .section-title-table td {
-  padding-bottom: 2px !important;
+  padding-bottom: 0px !important;
 }
 
 /* 单元格：图片部分 */
@@ -188,7 +190,7 @@ name {
 .edu-img,
 .exp-img {
   padding: 20px;
-  width: 25%;
+  width: 20%;
   vertical-align: middle;
 }
 
@@ -205,6 +207,15 @@ name {
   vertical-align: middle;
 }
 
+.pub-content em {
+  background: #f1f1f1;
+  padding: 2px 2px;
+  font-style: normal;
+  font-size: 12px;
+  border-radius: 6px;
+  margin-right: 4px;
+}
+
 /* 标题段落 */
 .section-title {
   font-size: 18px;
@@ -215,4 +226,22 @@ name {
 .map-container {
   max-width: 820px;
   margin: auto;
+}
+
+.position-line,
+.degree-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px; /* 可根据实际情况调整 */
+}
+
+.position,
+.degree {
+  font-weight: normal;
+}
+
+.time {
+  color: #666;
+  white-space: nowrap;
 }
