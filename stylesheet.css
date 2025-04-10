@@ -179,6 +179,10 @@ name {
   border-collapse: collapse;
 }
 
+.section-title-table td {
+  padding-bottom: 2px !important;
+}
+
 /* 单元格：图片部分 */
 .pub-img,
 .edu-img,
