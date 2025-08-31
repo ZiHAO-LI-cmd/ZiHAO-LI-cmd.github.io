@@ -132,9 +132,18 @@ papertitle {
   color: #333;
 }
 
-name {
+name { font-size: 32px; }
+
+name :lang(en) {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+}
+
+name :lang(zh), name :lang(zh-CN) {
+  font-family: 
+    "LXGW WenKai TC",
+    "KaiTi", 
+    "Source Han Serif SC",
+    sans-serif;
 }
 
 /* 主容器表格 */
