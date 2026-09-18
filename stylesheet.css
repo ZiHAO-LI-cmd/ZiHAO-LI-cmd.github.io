@@ -191,15 +191,28 @@ name :lang(zh), name :lang(zh-CN) {
 }
 
 .section-title-table td {
-  padding-bottom: 0px !important;
+  padding: 20px 20px 0 8px;
+}
+
+.section-title-table h2 {
+  margin: 0;
+}
+
+.pub-title-table td {
+  padding-left: 15px;
 }
 
 /* 单元格：图片部分 */
-.pub-img,
+.pub-img {
+  padding: 12px 8px;
+  width: 20%;
+  vertical-align: middle;
+}
+
 .edu-img,
 .exp-img {
-  padding: 20px;
-  width: 20%;
+  padding: 12px 60px 12px 8px;
+  width: 90px;
   vertical-align: middle;
 }
 
@@ -208,11 +221,16 @@ name :lang(zh), name :lang(zh-CN) {
 }
 
 /* 单元格：内容部分 */
-.pub-content,
+.pub-content {
+  padding: 12px;
+  width: 75%;
+  vertical-align: middle;
+}
+
 .edu-content,
 .exp-content {
-  padding: 20px;
-  width: 75%;
+  padding: 12px 8px 12px 8px;
+  width: auto;
   vertical-align: middle;
 }
 
@@ -227,7 +245,7 @@ name :lang(zh), name :lang(zh-CN) {
 
 /* 标题段落 */
 .section-title {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
 }
 
@@ -241,8 +259,10 @@ name :lang(zh), name :lang(zh-CN) {
 .degree-line {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   width: 100%;
-  max-width: 400px; /* 可根据实际情况调整 */
+  max-width: 560px;
+  gap: 56px;
 }
 
 .position,
@@ -253,4 +273,12 @@ name :lang(zh), name :lang(zh-CN) {
 .time {
   color: #666;
   white-space: nowrap;
+  text-align: right;
+  padding-left: 12px;
+}
+
+.edu-img img,
+.exp-img img {
+  width: 64px;
+  height: auto;
 }
